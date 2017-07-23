@@ -1,0 +1,21 @@
+https://gitlab.kzdemo.cn/........
+
+git clone "www."
+git remote add upstream "www."
+
+git checkout dev/master
+git checkout (文件地址) --》恢复文件为下载时候的状态
+
+git status
+git add .
+git commit -m ""
+git checkout master 
+git merge dev 
+git push origin
+
+
+
+git fetch upstream
+git merge upstream/master
+git checkout dev
+git merge upstream/master

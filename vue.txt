@@ -1,0 +1,63 @@
+//淘宝镜像
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+//安装脚手架
+npm install -g vue-cli
+
+
+//使用vue-cli初始化项目（vue init webpack-simple my-project-name）
+
+进入项目安装目录后（切换盘H:   再进入目录 cd ……）
+vue init webpack vuetest
+
+//进入目录
+cd vuetest
+
+//安装依赖
+npm install
+
+//开始运行
+npm run dev
+
+
+
+
+
+
+//路由懒加载
+
+import Vue from 'vue'
+import Router from 'vue-router'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      component: resolve => require(['components/Hello.vue'], resolve)
+    },
+    {
+        path: '/about',
+        component: resolve => require(['components/About.vue'], resolve)
+    }
+  ]
+})
+
+
+
+//安装less
+cnpm install less --save-dev
+
+
+
+
+
+
+
+
+
+
+
+
+

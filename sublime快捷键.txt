@@ -1,0 +1,15 @@
+[
+
+	// { "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
+
+
+	//向下复制一行
+	{ "keys": ["ctrl+alt+down"], "command": "duplicate_line" },
+
+
+	//删除一行
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+
+	
+]
