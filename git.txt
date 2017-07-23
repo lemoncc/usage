@@ -1,10 +1,10 @@
 https://gitlab.kzdemo.cn/........
 
 git clone "www."
-git remote add upstream "www."
+git remote add origin "www."       //git remote add upstream "www."
 
 git checkout dev/master
-git checkout (ÎÄ¼şµØÖ·) --¡·»Ö¸´ÎÄ¼şÎªÏÂÔØÊ±ºòµÄ×´Ì¬
+git checkout (æ–‡ä»¶åœ°å€) --ã€‹æ¢å¤æ–‡ä»¶ä¸ºä¸‹è½½æ—¶å€™çš„çŠ¶æ€
 
 git status
 git add .
