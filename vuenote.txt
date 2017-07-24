@@ -1,0 +1,103 @@
+//安装淘宝镜像
+  npm install -g cnpm --registry=https://registry.npm.taobao.org
+//安装vue脚手架
+  npm/cnpm i -g vue-cli
+//初始化项目
+  npm/cnpm init webpack my-project
+
+cd my-project
+npm i
+npm run dev
+
+
+
+//配置router
+
+  import Vue from 'vue'
+  import Router from 'vue-router'
+
+  Vue.use(Router)
+
+
+  const index = r => require.ensure([], () => r(require('../pages/index/index')), 'index');
+  const router = new Router({
+  // mode: 'history',
+    routes: [
+      {
+        path: '/',
+        name: 'index',
+        component: index
+      },
+      {
+        path:'/member/membercoin',
+        name:'membercoin',
+        component: membercoin, 
+        redirect:'/member/membercoin/item0',     
+        children:[
+         {
+            path: 'item0',
+            component: membercoin0
+          },{
+            path: 'item1',
+            component: membercoin1
+          }       
+        ]
+      },
+    ]
+  }
+
+  export default router ;
+
+  //方法2
+  
+    export default new Router({
+      routes: [
+        {
+          path: '/',
+          component: resolve => require(['components/Hello.vue'], resolve)
+        },
+        {
+            path: '/about',
+            component: resolve => require(['components/About.vue'], resolve)
+        }
+      ]
+    })
+
+
+
+//安装less
+
+  cnpm install less --save-dev
+
+  //.src/main.js 文件中引入
+
+    import ElementUI from 'element-ui'
+    import 'element-ui/lib/theme-default/index.css'
+    Vue.use(ElementUI)
+
+
+
+//安装es2015
+
+  babel-preset-es2015 babel-preset-stage-0 --save-dev
+
+
+
+//安装sass
+  
+  npm install node-sass sass-loader --save-dev
+
+
+//安装axios
+  
+  npm i axios --save
+
+
+//安装vuex
+
+  npm i vuex --save
+
+
+
+
+

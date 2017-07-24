@@ -1,0 +1,19 @@
+overflow:hidden 
+	原理：必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度 
+
+	优点：简单、代码少、浏览器支持好 
+
+	缺点：不能和position配合使用，因为超出的尺寸的会被隐藏。 
+
+ overflow:auto 
+
+ 	
+ text-indent:2em;
+
+ letter-spacing:2px;
+
+ width:"";
+ text-overflow:ellipsis;
+ overflow:hidden;
+ white-spacing:nowrap;
+ 

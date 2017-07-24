@@ -1,0 +1,27 @@
+容器
+	flex-direction
+		row（默认值）：主轴为水平方向，起点在左端。
+		row-reverse：主轴为水平方向，起点在右端。
+		column：主轴为垂直方向，起点在上沿。
+		column-reverse：主轴为垂直方向，起点在下沿。
+
+	flex-wrap：
+		.box{
+		  flex-wrap: nowrap | wrap | wrap-reverse;
+		}
+	flex-flow
+		.box {
+		  flex-flow: <flex-direction> || <flex-wrap>;
+		}
+	justify-content
+		.box {
+		  justify-content: flex-start | flex-end | center | space-between | space-around;
+		}
+	align-items
+		.box {
+		  align-items: flex-start | flex-end | center | baseline | stretch;
+		}
+	align-content
+		.box {
+		  align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+		}

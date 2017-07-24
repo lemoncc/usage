@@ -1,0 +1,7 @@
+以管理员身份运行   输入 
+
+
+cmder.exe/REGISTER ALL
+
+
+即可
