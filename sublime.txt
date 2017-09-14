@@ -13,13 +13,12 @@
 	
 ]
 
-安装插件：
-	使用Package Control组件安装：
-	按Ctrl+`调出console
+安装插件：(按Ctrl+`调出console)
+	
 	import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 
 
-插件：
+插件：(按ctrl+shift+p)
 chineselocalizations
 AllAutocomplete  所有补全工具
 LiveReload  
