@@ -1,0 +1,37 @@
+快捷键：
+[
+
+	// { "keys": ["ctrl+shift+down"], "command": "swap_line_down" },
+
+
+	//向下复制一行
+	{ "keys": ["ctrl+alt+down"], "command": "duplicate_line" },
+
+
+	//删除一行
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	
+]
+
+安装插件：
+	使用Package Control组件安装：
+	按Ctrl+`调出console
+	import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+
+
+插件：
+chineselocalizations
+AllAutocomplete  所有补全工具
+LiveReload  
+ColorPicker
+autofilename
+emmet
+jsoncomma
+jsonlint
+less
+sass
+sidebarenhancements
+vueayntax hightlight
+vuejs complete package
+vuejs snippets
+zzzzzzzz-localization
