@@ -22,6 +22,13 @@
 chineselocalizations
 AllAutocomplete  所有补全工具
 LiveReload  
+	user配置：
+	{
+	    "enabled_plugins": [
+		"SimpleReloadPlugin",
+		"SimpleRefresh"
+	    ]
+	}
 ColorPicker
 autofilename
 emmet
